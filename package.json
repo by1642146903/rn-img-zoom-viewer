@@ -1,0 +1,41 @@
+{
+  "name": "rn-img-zoom-viewer",
+  "version": "1.0.1",
+  "description": "react native image viewer,大图浏览",
+  "main": "built/index.js",
+  "types": "built/index.d.ts",
+  "scripts": {
+    "npm:publish": "npm --registry https://registry.npmjs.org/ publish",
+    "npm:sync": "curl -i https://npm.taobao.org/sync/rn-img-zoon-viewer",
+    "pod:lint": "export LANG=en_US.UTF-8 && pod lib lint TXIm.podspec",
+    "pod:install": "cd ios && export LANG=en_US.UTF-8 && pod install",
+    "prepare": "rm -rf built && tsc",
+    "start": "tsc -w --outDir demo/built"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/by1642146903/rn-img-zoom-viewer.git"
+  },
+  "keywords": [
+    "image-viewer"
+  ],
+  "author": "ascoders",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-image-pan-zoom": "^2.1.12"
+  },
+  "peerDependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.0",
+    "@types/react-native": "0.61.5",
+    "ascoders-tslint-config": "^1.0.2",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.2"
+  }
+}
