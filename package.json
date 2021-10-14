@@ -1,14 +1,12 @@
 {
   "name": "rn-img-zoom-viewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react native image viewer,大图浏览",
   "main": "built/index.js",
   "types": "built/index.d.ts",
   "scripts": {
     "npm:publish": "npm --registry https://registry.npmjs.org/ publish",
     "npm:sync": "curl -i https://npm.taobao.org/sync/rn-img-zoon-viewer",
-    "pod:lint": "export LANG=en_US.UTF-8 && pod lib lint TXIm.podspec",
-    "pod:install": "cd ios && export LANG=en_US.UTF-8 && pod install",
     "prepare": "rm -rf built && tsc",
     "start": "tsc -w --outDir demo/built"
   },
