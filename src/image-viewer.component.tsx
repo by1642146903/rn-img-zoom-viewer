@@ -454,6 +454,13 @@ export default class ImageViewer extends React.Component<Props, State> {
         return <View key={index} style={{ width: screenWidth, height: screenHeight }} />;
       }
 
+      // 如果宽大于屏幕宽度,整体缩放到宽度是屏幕宽度
+      if (width > screenWidth) {
+        const widthPixel = screenWidth / width;
+        width *= widthPixel;
+        height *= widthPixel;
+      }
+
       const Wrapper = ({ children, ...others }: any) => (
         <ImageZoom
           cropWidth={this.width}
